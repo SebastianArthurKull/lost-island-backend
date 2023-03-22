@@ -13,7 +13,7 @@ public class LostIslandBackendApplication {
     public SocketIOServer socketIOServer() {
         Configuration  config = new Configuration();
 //        config.setHostname("192.168.52.48");
-        config.setHostname("localhost");
+        config.setHostname("0.0.0.0");
         config.setPort(9092);
         return new SocketIOServer(config);
     }
